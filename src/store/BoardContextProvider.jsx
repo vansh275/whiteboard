@@ -1,10 +1,10 @@
 import React, { useCallback, useReducer } from 'react';
-import BoardContext from './board-context';
-import { Element } from '../utils/element';
-import { getSvgPathFromStroke } from '../utils/Getsvg';
+import BoardContext from './board-context.jsx';
+import { Element } from '../utils/element.js';
+import { getSvgPathFromStroke } from '../utils/Getsvg.jsx';
 import getStroke from 'perfect-freehand';
-import { isPointNearElement } from '../utils/element';
-import { BOARD_ACTIONS, TOOL_ACTION_TYPES, TOOL_ITEMS } from './constants';
+import { isPointNearElement } from '../utils/element.js';
+import { BOARD_ACTIONS, TOOL_ACTION_TYPES, TOOL_ITEMS } from './constants.js';
 
 const BoardContextProvider = ({ children }) => {
     const boardReducer = (state, action) => {

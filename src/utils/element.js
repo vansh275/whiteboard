@@ -1,8 +1,8 @@
 import rough from "roughjs/bin/rough";
 import { getStroke } from "perfect-freehand";
-import { getSvgPathFromStroke } from "./Getsvg";
-import { TOOL_ITEMS } from "../store/constants";
-import { getArrowHeadsCoordinates, isPointCloseToLine } from "./math";
+import { getSvgPathFromStroke } from "./Getsvg.jsx";
+import { TOOL_ITEMS } from "../store/constants.js";
+import { getArrowHeadsCoordinates, isPointCloseToLine } from "./math.jsx";
 
 const gen = rough.generator();
 

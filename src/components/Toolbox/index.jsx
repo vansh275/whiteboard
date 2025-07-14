@@ -2,8 +2,8 @@ import React, { useContext } from 'react'
 import classes from "./index.module.css"
 import { COLORS, FILL_TOOL_TYPES, SIZE_TOOL_TYPES, STROKE_TOOL_TYPES, TOOL_ITEMS } from '../../store/constants'
 import cn from "classnames"
-import ToolboxContext from '../../store/toolboxContext'
-import BoardContext from '../../store/board-context'
+import ToolboxContext from '../../store/toolboxContext.jsx'
+import BoardContext from '../../store/board-context.jsx'
 
 const Toolbox = () => {
     const { activeToolItem } = useContext(BoardContext);

@@ -1,4 +1,4 @@
-import { ELEMENT_ERASE_THRESHOLD } from "../store/constants";
+import { ELEMENT_ERASE_THRESHOLD } from "../store/constants.js";
 
 export const isPointCloseToLine = (x1, y1, x2, y2, pointX, pointY) => {
     const distToStart = distanceBetweenPoints(x1, y1, pointX, pointY);

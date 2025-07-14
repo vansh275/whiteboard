@@ -1,5 +1,5 @@
-import { COLORS, TOOL_ITEMS, TOOLBOX_ACTIONS } from "./constants";
-import ToolboxContext from "./toolboxContext";
+import { COLORS, TOOL_ITEMS, TOOLBOX_ACTIONS } from "./constants.js";
+import ToolboxContext from "./toolboxContext.jsx";
 
 import React, { useReducer } from 'react'
 

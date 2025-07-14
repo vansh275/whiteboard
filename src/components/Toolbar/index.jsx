@@ -2,7 +2,7 @@ import React from 'react'
 import classes from "./index.module.css"
 import cn from "classnames"
 import { useContext } from 'react'
-import boardContext from '../../store/board-context'
+import boardContext from '../../store/board-context.jsx'
 import {
     FaSlash,
     FaRegCircle,

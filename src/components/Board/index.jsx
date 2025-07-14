@@ -1,9 +1,9 @@
 import { useContext, useEffect, useRef } from "react"
 import rough from "roughjs"
-import BoardContext from "../../store/board-context";
-import ToolboxContext from "../../store/toolboxContext";
+import BoardContext from "../../store/board-context.jsx";
+import ToolboxContext from "../../store/toolboxContext.jsx";
 import classes from "./index.module.css";
-import { TOOL_ACTION_TYPES, TOOL_ITEMS } from "../../store/constants";
+import { TOOL_ACTION_TYPES, TOOL_ITEMS } from "../../store/constants.js";
 
 function Board() {
     const canvaRef = useRef();

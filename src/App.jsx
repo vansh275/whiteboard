@@ -1,8 +1,8 @@
 import Board from "./components/Board";
 import Toolbar from "./components/Toolbar";
 import Toolbox from "./components/Toolbox";
-import BoardContextProvider from "./store/boardContextProvider";
-import ToolboxContextProvider from "./store/toolboxContextProvider";
+import BoardContextProvider from "./store/BoardContextProvider.jsx";
+import ToolboxContextProvider from "./store/toolboxContextProvider.jsx";
 
 function App() {
   return (
