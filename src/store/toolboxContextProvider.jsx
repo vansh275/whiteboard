@@ -9,12 +9,12 @@ const ToolboxContextProvider = ({ children }) => {
         switch (action.type) {
             case TOOLBOX_ACTIONS.CHANGE_STROKE: {
                 const newState = { ...state };
-                newState[action.payload.tool].stroke = action.payload.stroke;
+                newState[action.payload.tool].stroke = action.payload.color;
                 return newState;
             }
             case TOOLBOX_ACTIONS.CHANGE_FILL: {
                 const newState = { ...state };
-                newState[action.payload.tool].fill = action.payload.fill;
+                newState[action.payload.tool].fill = action.payload.color;
                 return newState;
             }
             case TOOLBOX_ACTIONS.CHANGE_SIZE: {
@@ -68,7 +68,7 @@ const ToolboxContextProvider = ({ children }) => {
     }
 
     const changeFillHandler = (tool, color) => {
-        // console.log(tool, color);
+        console.log(tool, color);
         dispatchToolboxAction({
             type: TOOLBOX_ACTIONS.CHANGE_FILL,
             payload: {

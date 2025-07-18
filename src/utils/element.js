@@ -70,6 +70,7 @@ export const Element = (id, x1, y1, x2, y2, { type, stroke, fill, size }) => {
                 [x3, y3],
                 [x2, y2],
                 [x4, y4],]
+                , option
             )
             // console.log(newEle);
             return newEle;
